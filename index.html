@@ -2,187 +2,217 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Curls by Carine | Price List</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
     body {
         font-family: 'Poppins', sans-serif;
-        background-color: #ffffff;
+        background-color: #fdfaf5; /* لون خلفية فاتح جداً مريح للعين */
         margin: 0;
-        padding: 30px;
-        color: #000;
+        padding: 0;
+        display: flex;
+        justify-content: center;
     }
 
-    .container {
-        max-width: 620px;
-        margin: auto;
-        border-left: 2px solid #d4af37;
-        border-right: 2px solid #d4af37;
-        padding: 25px;
-        animation: fadeIn 1s ease-in-out;
-    }
-
-    .logo {
+    /* الجزء الأسود العلوي */
+    .header-black {
+        background-color: #000000;
+        padding: 40px 0;
         text-align: center;
-        margin-bottom: 20px;
+        width: 100%;
+        border-bottom: 4px solid #b39359; /* الخط الذهبي الفاصل */
     }
 
-    .logo img {
-        max-width: 140px;
+    .header-black img {
+        width: 150px; /* حجم اللوجو */
+        height: auto;
     }
 
-    h1 {
-        font-size: 26px;
-        margin-bottom: 30px;
-        text-align: center;
-        letter-spacing: 1px;
+    .main-wrapper {
+        width: 100%;
+        max-width: 500px;
+        background: white;
+        margin: 20px;
+        border: 1px solid #e0d0b0;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     }
 
-    h2 {
-        font-size: 22px;
-        margin-top: 40px;
-        margin-bottom: 6px;
+    .content-padding {
+        padding: 30px 25px;
     }
 
-    h3 {
-        font-size: 17px;
-        margin: 20px 0 12px;
-    }
-
-    .duration {
-        font-size: 14px;
-        color: #666;
+    .section-title-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-top: 30px;
         margin-bottom: 15px;
     }
 
+    h1.main-heading {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    h2.category-title {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0;
+        color: #000;
+    }
+
+    .duration-tag {
+        font-size: 13px;
+        color: #b39359;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        background: #fdf7eb;
+        padding: 2px 10px;
+        border-radius: 20px;
+    }
+
+    h3.sub-category {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 20px 0 15px 0;
+        color: #000;
+    }
+
     .service-box {
-        border: 1.5px solid #d4af37;
-        border-radius: 12px;
-        padding: 16px 18px;
+        border: 1px solid #e0d0b0;
+        border-radius: 8px;
+        padding: 15px 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 16px;
-        transition: all 0.3s ease;
-        animation: slideUp 0.6s ease forwards;
+        margin-bottom: 12px;
+        transition: 0.3s;
     }
 
     .service-box:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        border-color: #b39359;
+        background-color: #fffcf5;
     }
 
     .service-name {
-        font-size: 16px;
+        font-size: 15px;
+        font-weight: 400;
+        color: #333;
     }
 
     .price {
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 600;
+        color: #000;
+        white-space: nowrap;
     }
 
-    .price-note {
-        margin-top: 45px;
-        font-size: 14px;
-        color: #555;
+    .footer-note {
+        margin-top: 40px;
+        font-size: 13px;
+        color: #777;
         text-align: center;
-        font-style: italic;
+        line-height: 1.6;
+        padding: 0 20px;
     }
 
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
+    /* أيقونة المقص */
+    .icon-cut::before {
+        content: "✂";
+        font-size: 22px;
+        margin-right: 8px;
     }
 
-    @keyframes slideUp {
-        from {
-            opacity: 0;
-            transform: translateY(10px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
 </style>
 </head>
-
 <body>
 
-<div class="container">
-
-    <!-- LOGO -->
-    <div class="logo">
+<div class="main-wrapper">
+    <div class="header-black">
         <img src="IMG_20250504_212547_175.webp" alt="Curls by Carine Logo">
     </div>
 
-    <h1>Our Services</h1>
+    <div class="content-padding">
+        
+        <h1 class="main-heading"><span class="icon-cut"></span> Our Services</h1>
 
-    <!-- Curly Cuts -->
-    <h2>Curly Cuts</h2>
-    <div class="duration">0.5–1.5 hours</div>
+        <div class="section-title-container">
+            <h2 class="category-title">Curly Cuts</h2>
+            <span class="duration-tag">⏱ 0.5–1.5 hrs</span>
+        </div>
 
-    <div class="service-box">
-        <div class="service-name">Dry Cut</div>
-        <div class="price">300 EGP</div>
+        <div class="service-box">
+            <div class="service-name">Dry Cut</div>
+            <div class="price">300 EGP</div>
+        </div>
+
+        <div class="service-box">
+            <div class="service-name">Wet Cut</div>
+            <div class="price">300 EGP</div>
+        </div>
+
+        <div class="service-box">
+            <div class="service-name">Wet/Dry Cut + Refresh</div>
+            <div class="price">400 EGP</div>
+        </div>
+
+        <div class="section-title-container">
+            <h2 class="category-title">Hair Styling</h2>
+            <span class="duration-tag">⏱ 1.5–3 hrs</span>
+        </div>
+
+        <h3 class="sub-category">— Curly & Wavy Hair</h3>
+
+        <div class="service-box">
+            <div class="service-name">Ear Length Hair</div>
+            <div class="price">350 EGP</div>
+        </div>
+
+        <div class="service-box">
+            <div class="service-name">Shoulder Length Hair</div>
+            <div class="price">400 EGP</div>
+        </div>
+
+        <div class="service-box">
+            <div class="service-name">Mid Back Length Hair</div>
+            <div class="price">450 EGP</div>
+        </div>
+
+        <div class="service-box">
+            <div class="service-name">Long Hair</div>
+            <div class="price">600 EGP</div>
+        </div>
+
+        <h3 class="sub-category">— Coily Hair</h3>
+
+        <div class="service-box">
+            <div class="service-name">Afro / Coily / Kinky</div>
+            <div class="price">650 EGP</div>
+        </div>
+
+        <div class="section-title-container">
+            <h2 class="category-title">Hairstyles</h2>
+        </div>
+
+        <div class="service-box">
+            <div class="service-name">Custom Hairstyle</div>
+            <div class="price">200–700 EGP</div>
+        </div>
+
+        <div class="footer-note">
+            * For thick or very dense hair, an additional 100 EGP may apply.
+        </div>
     </div>
-
-    <div class="service-box">
-        <div class="service-name">Wet Cut</div>
-        <div class="price">300 EGP</div>
-    </div>
-
-    <div class="service-box">
-        <div class="service-name">Wet/Dry Cut + Refresh</div>
-        <div class="price">400 EGP</div>
-    </div>
-
-    <!-- Hair Styling -->
-    <h2>Hair Styling</h2>
-    <div class="duration">1.5–3 hours</div>
-
-    <h3>– Curly & Wavy Hair</h3>
-
-    <div class="service-box">
-        <div class="service-name">Ear Length Hair</div>
-        <div class="price">350 EGP</div>
-    </div>
-
-    <div class="service-box">
-        <div class="service-name">Shoulder Length Hair</div>
-        <div class="price">400 EGP</div>
-    </div>
-
-    <div class="service-box">
-        <div class="service-name">Mid Back Length Hair</div>
-        <div class="price">450 EGP</div>
-    </div>
-
-    <div class="service-box">
-        <div class="service-name">Long Hair</div>
-        <div class="price">600 EGP</div>
-    </div>
-
-    <h3>– Coily Hair</h3>
-
-    <div class="service-box">
-        <div class="service-name">Afro / Coily / Kinky</div>
-        <div class="price">650 EGP</div>
-    </div>
-
-    <!-- Hairstyles -->
-    <h2>Hairstyles</h2>
-
-    <div class="service-box">
-        <div class="service-name">Custom Hairstyle</div>
-        <div class="price">200–700 EGP</div>
-    </div>
-
-    <div class="price-note">
-        For thick or very dense hair, an additional 100 EGP may apply.
-    </div>
-
 </div>
 
 </body>
 </html>
+
