@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curls by Carine | Bridal & Events</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+    body { font-family: 'Poppins', sans-serif; background-color: #fdfaf5; margin: 0; padding: 0; display: flex; justify-content: center; }
+    .header-black { background-color: #000; padding: 40px 0; text-align: center; width: 100%; border-bottom: 4px solid #b39359; }
+    .header-black img { width: 150px; height: auto; }
+    .main-wrapper { width: 100%; max-width: 500px; background: white; margin: 20px; border: 1px solid #e0d0b0; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+    .content-padding { padding: 30px 25px; }
+    
+    h1.main-heading { font-size: 24px; font-weight: 700; margin-bottom: 5px; text-align: center; color: #000; }
+    .sub-heading { text-align: center; color: #b39359; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 30px; display: block; }
+    
+    .package-card { border: 1px solid #e0d0b0; border-radius: 12px; padding: 20px; margin-bottom: 20px; transition: 0.3s; position: relative; overflow: hidden; }
+    .package-card:hover { border-color: #b39359; background-color: #fffcf5; }
+    
+    .package-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+    .package-name { font-size: 18px; font-weight: 700; color: #000; }
+    .package-price { font-size: 18px; font-weight: 700; color: #b39359; }
+    
+    .includes-title { font-size: 12px; font-weight: 700; color: #000; margin-bottom: 8px; display: block; text-transform: uppercase; }
+    .features-list { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .features-list li { font-size: 13px; color: #555; display: flex; align-items: center; gap: 6px; }
+    .features-list li::before { content: "✧"; color: #b39359; font-weight: bold; }
+
+    .soiree-options { display: flex; flex-direction: column; gap: 15px; }
+    .soiree-box { border-left: 3px solid #b39359; padding-left: 15px; }
+    
+    .footer-note { margin-top: 30px; font-size: 13px; color: #777; text-align: center; font-style: italic; border-top: 1px dashed #e0d0b0; padding-top: 20px; }
+    .nav-button { display: block; text-align: center; margin-top: 20px; padding: 12px; background-color: #000; color: #b39359; text-decoration: none; border-radius: 8px; font-size: 13px; font-weight: 600; border: 1px solid #b39359; }
+</style>
+</head>
+<body>
+<div class="main-wrapper">
+    <div class="header-black">
+        <img src="Curls_by_Carine_Logo_Transparent.png" alt="Logo">
+    </div>
+    <div class="content-padding">
+        <h1 class="main-heading">Special Occasions</h1>
+        <span class="sub-heading">Bridal & Event Packages</span>
+
+        <!-- Wedding Package -->
+        <div class="package-card" style="border: 2px solid #b39359;">
+            <div class="package-header">
+                <span class="package-name">💍 The Royal Bride</span>
+                <span class="package-price">3000 EGP</span>
+            </div>
+            <span class="includes-title">Package Includes:</span>
+            <ul class="features-list">
+                <li>Curly/Dry Cut</li>
+                <li>Full Styling</li>
+                <li>Premium Hairdo</li>
+                <li>Hairpiece Attachment</li>
+                <li>Veil Attachment</li>
+                <li>Trial Session</li>
+            </ul>
+        </div>
+
+        <!-- Engagement Package -->
+        <div class="package-card">
+            <div class="package-header">
+                <span class="package-name">✨ The Glam Engagement</span>
+                <span class="package-price">2000 EGP</span>
+            </div>
+            <span class="includes-title">Package Includes:</span>
+            <ul class="features-list">
+                <li>Curly/Dry Cut</li>
+                <li>Full Styling</li>
+                <li>Elegant Hairdo</li>
+                <li>Hairpiece Attachment</li>
+                <li>Trial Session</li>
+            </ul>
+        </div>
+
+        <!-- Soiree Section -->
+        <h3 style="font-size: 16px; font-weight: 700; margin: 30px 0 15px 0; border-bottom: 1px solid #e0d0b0; padding-bottom: 5px;">💃 Soirée Guest Packages</h3>
+        
+        <div class="soiree-options">
+            <div class="package-card">
+                <div class="package-header">
+                    <span class="package-name">Full Soirée Glow</span>
+                    <span class="package-price">1700 EGP</span>
+                </div>
+                <ul class="features-list">
+                    <li>Curly/Dry Cut</li>
+                    <li>Full Styling</li>
+                    <li>Special Hairdo</li>
+                    <li>Hairpiece Attachment</li>
+                </ul>
+            </div>
+
+            <div class="package-card">
+                <div class="package-header">
+                    <span class="package-name">Classic Soirée</span>
+                    <span class="package-price">1200 EGP</span>
+                </div>
+                <ul class="features-list">
+                    <li>Full Styling</li>
+                    <li>Special Hairdo</li>
+                    <li>Hairpiece Attachment</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-note">
+            * All packages require a prior booking and deposit.<br>
+            * Prices may vary based on hair length and complexity.
+        </div>
+
+        <a href="index.html" class="nav-button">⬅ Back to Services</a>
+    </div>
+</div>
+</body>
+</html>
